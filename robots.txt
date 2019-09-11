@@ -1,2 +1,2 @@
 ﻿User-agent: *
-Sitemap: comodini_ru.itsinsta.site/sitemap.xml
+Sitemap: https://comodini_ru.itsinsta.site/sitemap.xml
