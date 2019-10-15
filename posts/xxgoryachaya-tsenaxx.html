@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="comodini_ru" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,12 +57,12 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="../main.html" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/115f15d76c8385b93a75f8b572dcb7ba/5E1BE2C1/t51.2885-19/s150x150/49370457_284909102224627_127814975438716928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="Мебель на заказ в Саранске"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/4c48a0e68332000e159b917dc939dd72/5E436FC1/t51.2885-19/s150x150/49370457_284909102224627_127814975438716928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="Мебель на заказ в Саранске"></div>
 							<div class="header__logo-txt">comodini_ru</div>
 						</a>
 						<div class="header__title">Мебель на заказ в Саранске</div>
@@ -68,249 +71,255 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель саранск">
-								<a href="../tags/./mebel--saransk.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--saransk.png" alt="мебель саранск" /></div>
-									<div class="stories__slide-txt">мебель саранск</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель саранск">
+										<a href="../tags/./mebel--saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--saransk.png);"></div>
+											<div class="stories__slide-txt">мебель саранск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн саранск">
+										<a href="../tags/./dizayn-saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-saransk.png);"></div>
+											<div class="stories__slide-txt">дизайн саранск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель на заказ саранск">
+										<a href="../tags/./mebel--na-zakaz-saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--na-zakaz-saransk.png);"></div>
+											<div class="stories__slide-txt">мебель на заказ саранск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="интерьер саранск">
+										<a href="../tags/./inter-er-saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/inter-er-saransk.png);"></div>
+											<div class="stories__slide-txt">интерьер саранск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухни саранск">
+										<a href="../tags/./kukhni-saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhni-saransk.png);"></div>
+											<div class="stories__slide-txt">кухни саранск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ruzaevka">
+										<a href="../tags/./ruzaevka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ruzaevka.png);"></div>
+											<div class="stories__slide-txt">ruzaevka</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="хайтек">
+										<a href="../tags/./khaytek.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/khaytek.png);"></div>
+											<div class="stories__slide-txt">хайтек</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="саранск">
+										<a href="../tags/./saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/saransk.png);"></div>
+											<div class="stories__slide-txt">саранск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="акции">
+										<a href="../tags/./aktsii.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/aktsii.png);"></div>
+											<div class="stories__slide-txt">акции</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкафы саранск">
+										<a href="../tags/./shkafy-saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkafy-saransk.png);"></div>
+											<div class="stories__slide-txt">шкафы саранск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="saransk">
+										<a href="../tags/./saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/saransk.png);"></div>
+											<div class="stories__slide-txt">saransk</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="классика">
+										<a href="../tags/./klassika.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/klassika.png);"></div>
+											<div class="stories__slide-txt">классика</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухня">
+										<a href="../tags/./kukhnya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhnya.png);"></div>
+											<div class="stories__slide-txt">кухня</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="скидки">
+										<a href="../tags/./skidki.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/skidki.png);"></div>
+											<div class="stories__slide-txt">скидки</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="нижний новгород">
+										<a href="../tags/./nizhniy-novgorod.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/nizhniy-novgorod.png);"></div>
+											<div class="stories__slide-txt">нижний новгород</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="лофт">
+										<a href="../tags/./loft.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/loft.png);"></div>
+											<div class="stories__slide-txt">лофт</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мордовия">
+										<a href="../tags/./mordoviya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mordoviya.png);"></div>
+											<div class="stories__slide-txt">мордовия</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="mordovia arena">
+										<a href="../tags/./mordovia-arena.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mordovia-arena.png);"></div>
+											<div class="stories__slide-txt">mordovia arena</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="купить кухнюв саранске">
+										<a href="../tags/./kupit--kukhnyuv-saranske.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kupit--kukhnyuv-saranske.png);"></div>
+											<div class="stories__slide-txt">купить кухнюв саранске</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн">
+										<a href="../tags/./dizayn.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn.png);"></div>
+											<div class="stories__slide-txt">дизайн</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="минимализм">
+										<a href="../tags/./minimalizm.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/minimalizm.png);"></div>
+											<div class="stories__slide-txt">минимализм</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="скандинавский стиль">
+										<a href="../tags/./skandinavskiy-stil-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/skandinavskiy-stil-.png);"></div>
+											<div class="stories__slide-txt">скандинавский стиль</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="столы саранск">
+										<a href="../tags/./stoly-saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/stoly-saransk.png);"></div>
+											<div class="stories__slide-txt">столы саранск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="рузаевка">
+										<a href="../tags/./ruzaevka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/ruzaevka.png);"></div>
+											<div class="stories__slide-txt">рузаевка</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухня в современном стиле">
+										<a href="../tags/./kukhnya-v-sovremennom-stile.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhnya-v-sovremennom-stile.png);"></div>
+											<div class="stories__slide-txt">кухня в современном стиле</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="модерн">
+										<a href="../tags/./modern.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/modern.png);"></div>
+											<div class="stories__slide-txt">модерн</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ковылкино">
+										<a href="../tags/./kovylkino.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kovylkino.png);"></div>
+											<div class="stories__slide-txt">ковылкино</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="диваны саранск">
+										<a href="../tags/./divany-saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/divany-saransk.png);"></div>
+											<div class="stories__slide-txt">диваны саранск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="декор саранск">
+										<a href="../tags/./dekor-saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dekor-saransk.png);"></div>
+											<div class="stories__slide-txt">декор саранск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="инсар">
+										<a href="../tags/./insar.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/insar.png);"></div>
+											<div class="stories__slide-txt">инсар</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн саранск">
-								<a href="../tags/./dizayn-saransk.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-saransk.png" alt="дизайн саранск" /></div>
-									<div class="stories__slide-txt">дизайн саранск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель на заказ саранск">
-								<a href="../tags/./mebel--na-zakaz-saransk.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--na-zakaz-saransk.png" alt="мебель на заказ саранск" /></div>
-									<div class="stories__slide-txt">мебель на заказ саранск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="интерьер саранск">
-								<a href="../tags/./inter-er-saransk.html">
-									<div class="stories__slide-pic"><img src="../img/og/inter-er-saransk.png" alt="интерьер саранск" /></div>
-									<div class="stories__slide-txt">интерьер саранск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухни саранск">
-								<a href="../tags/./kukhni-saransk.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhni-saransk.png" alt="кухни саранск" /></div>
-									<div class="stories__slide-txt">кухни саранск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ruzaevka">
-								<a href="../tags/./ruzaevka.html">
-									<div class="stories__slide-pic"><img src="../img/og/ruzaevka.png" alt="ruzaevka" /></div>
-									<div class="stories__slide-txt">ruzaevka</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="хайтек">
-								<a href="../tags/./khaytek.html">
-									<div class="stories__slide-pic"><img src="../img/og/khaytek.png" alt="хайтек" /></div>
-									<div class="stories__slide-txt">хайтек</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="саранск">
-								<a href="../tags/./saransk.html">
-									<div class="stories__slide-pic"><img src="../img/og/saransk.png" alt="саранск" /></div>
-									<div class="stories__slide-txt">саранск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="акции">
-								<a href="../tags/./aktsii.html">
-									<div class="stories__slide-pic"><img src="../img/og/aktsii.png" alt="акции" /></div>
-									<div class="stories__slide-txt">акции</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкафы саранск">
-								<a href="../tags/./shkafy-saransk.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkafy-saransk.png" alt="шкафы саранск" /></div>
-									<div class="stories__slide-txt">шкафы саранск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="saransk">
-								<a href="../tags/./saransk.html">
-									<div class="stories__slide-pic"><img src="../img/og/saransk.png" alt="saransk" /></div>
-									<div class="stories__slide-txt">saransk</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="классика">
-								<a href="../tags/./klassika.html">
-									<div class="stories__slide-pic"><img src="../img/og/klassika.png" alt="классика" /></div>
-									<div class="stories__slide-txt">классика</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухня">
-								<a href="../tags/./kukhnya.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhnya.png" alt="кухня" /></div>
-									<div class="stories__slide-txt">кухня</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="скидки">
-								<a href="../tags/./skidki.html">
-									<div class="stories__slide-pic"><img src="../img/og/skidki.png" alt="скидки" /></div>
-									<div class="stories__slide-txt">скидки</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="нижний новгород">
-								<a href="../tags/./nizhniy-novgorod.html">
-									<div class="stories__slide-pic"><img src="../img/og/nizhniy-novgorod.png" alt="нижний новгород" /></div>
-									<div class="stories__slide-txt">нижний новгород</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="лофт">
-								<a href="../tags/./loft.html">
-									<div class="stories__slide-pic"><img src="../img/og/loft.png" alt="лофт" /></div>
-									<div class="stories__slide-txt">лофт</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мордовия">
-								<a href="../tags/./mordoviya.html">
-									<div class="stories__slide-pic"><img src="../img/og/mordoviya.png" alt="мордовия" /></div>
-									<div class="stories__slide-txt">мордовия</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="mordovia arena">
-								<a href="../tags/./mordovia-arena.html">
-									<div class="stories__slide-pic"><img src="../img/og/mordovia-arena.png" alt="mordovia arena" /></div>
-									<div class="stories__slide-txt">mordovia arena</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="купить кухнюв саранске">
-								<a href="../tags/./kupit--kukhnyuv-saranske.html">
-									<div class="stories__slide-pic"><img src="../img/og/kupit--kukhnyuv-saranske.png" alt="купить кухнюв саранске" /></div>
-									<div class="stories__slide-txt">купить кухнюв саранске</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн">
-								<a href="../tags/./dizayn.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn.png" alt="дизайн" /></div>
-									<div class="stories__slide-txt">дизайн</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="минимализм">
-								<a href="../tags/./minimalizm.html">
-									<div class="stories__slide-pic"><img src="../img/og/minimalizm.png" alt="минимализм" /></div>
-									<div class="stories__slide-txt">минимализм</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="скандинавский стиль">
-								<a href="../tags/./skandinavskiy-stil-.html">
-									<div class="stories__slide-pic"><img src="../img/og/skandinavskiy-stil-.png" alt="скандинавский стиль" /></div>
-									<div class="stories__slide-txt">скандинавский стиль</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="столы саранск">
-								<a href="../tags/./stoly-saransk.html">
-									<div class="stories__slide-pic"><img src="../img/og/stoly-saransk.png" alt="столы саранск" /></div>
-									<div class="stories__slide-txt">столы саранск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="рузаевка">
-								<a href="../tags/./ruzaevka.html">
-									<div class="stories__slide-pic"><img src="../img/og/ruzaevka.png" alt="рузаевка" /></div>
-									<div class="stories__slide-txt">рузаевка</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухня в современном стиле">
-								<a href="../tags/./kukhnya-v-sovremennom-stile.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhnya-v-sovremennom-stile.png" alt="кухня в современном стиле" /></div>
-									<div class="stories__slide-txt">кухня в современном стиле</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="модерн">
-								<a href="../tags/./modern.html">
-									<div class="stories__slide-pic"><img src="../img/og/modern.png" alt="модерн" /></div>
-									<div class="stories__slide-txt">модерн</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ковылкино">
-								<a href="../tags/./kovylkino.html">
-									<div class="stories__slide-pic"><img src="../img/og/kovylkino.png" alt="ковылкино" /></div>
-									<div class="stories__slide-txt">ковылкино</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="диваны саранск">
-								<a href="../tags/./divany-saransk.html">
-									<div class="stories__slide-pic"><img src="../img/og/divany-saransk.png" alt="диваны саранск" /></div>
-									<div class="stories__slide-txt">диваны саранск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="декор саранск">
-								<a href="../tags/./dekor-saransk.html">
-									<div class="stories__slide-pic"><img src="../img/og/dekor-saransk.png" alt="декор саранск" /></div>
-									<div class="stories__slide-txt">декор саранск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="инсар">
-								<a href="../tags/./insar.html">
-									<div class="stories__slide-pic"><img src="../img/og/insar.png" alt="инсар" /></div>
-									<div class="stories__slide-txt">инсар</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -335,19 +344,32 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/1efc454981e647f3d0fc53261cacd9d9/5E375564/t51.2885-15/e35/28154631_399973640474233_3324343573737897984_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/fce3ba476f7b18d81963386220a2c930/5E2724A1/t51.2885-15/e35/28427933_2132390490380820_2443750676761673728_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/8e3109c195bda0620cda960cf1f34fbe/5E1BDE00/t51.2885-15/e35/27893824_893467954160306_1393518034861162496_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/24b672ed608b54733cdd709620d1d457/5E3A1468/t51.2885-15/e35/27893664_224065988157829_2110051680870465536_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/1efc454981e647f3d0fc53261cacd9d9/5E375564/t51.2885-15/e35/28154631_399973640474233_3324343573737897984_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/fce3ba476f7b18d81963386220a2c930/5E2724A1/t51.2885-15/e35/28427933_2132390490380820_2443750676761673728_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/536dcb27604fcf8665a70c27b2b79976/5E436B00/t51.2885-15/e35/27893824_893467954160306_1393518034861162496_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/3a39dff1d085d2cf85a5e12cc6de6999/5E61A168/t51.2885-15/e35/27893664_224065988157829_2110051680870465536_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p>🔥Горячая цена🔥<br/>Обеденный стол ALFA по СУПЕР ЦЕНЕ 21900-.<br/>Регулярная цена 27900-.<br/>1️⃣синхронный механизм легко раскладывается, вставка "бабочка" (без стекла) хранится под столешницей;<br/>2️⃣комбинированная столешница из МДФ и закаленного глянцевого стекла не боится влаги и не впитывает загрязнения.<br/>3️⃣База стола - МДФ + металл блестящего стального цвета<br/>4️⃣Возможность выбора цветовой гаммы<br/>5️⃣Размер 140см в сложенном виде вмещает до 6 человек, в разложенном 180 см -8 человек. <br/>А ширина 80 см вмещает большее количество разных блюд.</p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/BftTmaMHjpd/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -432,7 +454,7 @@
 							<a href="./xxaktsiya-xshchedraya-osen-xxx.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>42</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>43</span>
 									</div>
 									<img src="https://scontent-arn2-2.cdninstagram.com/vp/c6bc10d3964d6e6640825353c37c281a/5E265C69/t51.2885-15/e35/p1080x1080/71169343_509307703250162_8144667050151879623_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="🍁АКЦИЯ «Щедрая осень»🍁">
 								</div>
@@ -479,7 +501,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>11</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/e3354649eb9c1187c3da3591b1024169/5E1C96C3/t51.2885-15/e35/38191568_677622522573555_1868958046806343680_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt="Стул Женева💣💣💣">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/0ee6cc90f9112ac418fec33171d780c6/5E4423C3/t51.2885-15/e35/38191568_677622522573555_1868958046806343680_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt="Стул Женева💣💣💣">
 								</div>
 								<div class="article-more__item-name">Стул Женева💣💣💣</div>
 							</a>
@@ -523,11 +545,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
