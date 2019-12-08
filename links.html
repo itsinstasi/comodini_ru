@@ -2,15 +2,15 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Мебель на заказ в Саранске</title>
+    <title>COMODINI Мебельный Бутик</title>
     
     <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/> 
     <script async src="https://use.fontawesome.com/d758daec41.js"></script>   
 	<link rel="stylesheet" href="css/style.css"/>
     
-    <meta name="description" content="мебель саранск дизайн назаказ интерьер кухни ruzaevka хайтек акции шкафы">
-    <meta name="keywords" content="мебель саранск дизайн назаказ интерьер кухни ruzaevka хайтек акции шкафы" />
+    <meta name="description" content="мебель саранск дизайн назаказ интерьер кухни ruzaevka хайтек шкафы акции">
+    <meta name="keywords" content="мебель саранск дизайн назаказ интерьер кухни ruzaevka хайтек шкафы акции" />
     
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -38,8 +38,8 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="150"/>
     <meta property="og:image:height" content="150"/>
-    <meta property="og:title" content="Мебель на заказ в Саранске" />
-    <meta property="og:description" content="мебель саранск дизайн назаказ интерьер кухни ruzaevka хайтек акции шкафы" />
+    <meta property="og:title" content="COMODINI Мебельный Бутик" />
+    <meta property="og:description" content="мебель саранск дизайн назаказ интерьер кухни ruzaevka хайтек шкафы акции" />
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="comodini_ru" />
 
@@ -62,10 +62,10 @@
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="./main.html" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/041d82502a84edf43a0f9ef8e254e98a/5E6AFCC1/t51.2885-19/s150x150/49370457_284909102224627_127814975438716928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="Мебель на заказ в Саранске"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/vp/041d82502a84edf43a0f9ef8e254e98a/5E6AFCC1/t51.2885-19/s150x150/49370457_284909102224627_127814975438716928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com" alt="COMODINI Мебельный Бутик"></div>
 							<div class="header__logo-txt">comodini_ru</div>
 						</a>
-						<div class="header__title">Мебель на заказ в Саранске</div>
+						<div class="header__title">COMODINI Мебельный Бутик</div>
 					</div>
 				</div>
 			</div>
@@ -271,14 +271,6 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="stories__slide" title="рузаевка">
-									<a href="./tags/./ruzaevka.html">
-										<div class="stories__slide-pic" style="background-image: url(./img/og/ruzaevka.png);"></div>
-										<div class="stories__slide-txt" style="">рузаевка</div>
-									</a>
-								</div>
-							</div>
-							<div class="swiper-slide">
 								<div class="stories__slide" title="мягкая мебель саранск">
 									<a href="./tags/./myagkaya-mebel--saransk.html">
 										<div class="stories__slide-pic" style="background-image: url(./img/og/myagkaya-mebel--saransk.png);"></div>
@@ -291,6 +283,14 @@
 									<a href="./tags/./spal-ni-saransk.html">
 										<div class="stories__slide-pic" style="background-image: url(./img/og/spal-ni-saransk.png);"></div>
 										<div class="stories__slide-txt" style="">спальни саранск</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="stories__slide" title="рузаевка">
+									<a href="./tags/./ruzaevka.html">
+										<div class="stories__slide-pic" style="background-image: url(./img/og/ruzaevka.png);"></div>
+										<div class="stories__slide-txt" style="">рузаевка</div>
 									</a>
 								</div>
 							</div>
@@ -328,7 +328,7 @@
 
 			<div class="links-page">
 				<div class="container">
-					<h1 class="links-page-title">Мебель на заказ в Саранске</h1>
+					<h1 class="links-page-title">COMODINI Мебельный Бутик</h1>
 
 					<div class="links-page-messagers count-2">
 						<a href="https://wa.me/79272769199" target="_blank" style="
@@ -428,6 +428,17 @@ $(document).ready(function(){
                 contentType: 'application/json',
 		data : form_data
 	}).done(function(response){
+	    var email = response.email;
+		if (email) {
+	        $("#leadSent").text("Ваш запрос отправлен на " + email);
+		} else {
+	        $("#leadSent").text("Ваш запрос отправлен");
+		}
+
+		var input = form.find('input');
+		input.attr('readonly', true);
+        input.attr("disabled", true);
+		form.find('button').attr("disabled", true);
 	}).fail(function(){
 	});
 
