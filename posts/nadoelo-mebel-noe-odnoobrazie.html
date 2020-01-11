@@ -47,7 +47,19 @@
 	<script src="../js/vendors/modernizr-custom.js"></script>
 
 
-</head>
+
+    <style>
+.iframeVideo {
+	height: 0px;
+	padding-top: 25px;
+	padding-bottom: 56.2%;
+	position: relative;
+}
+.iframeVideo iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}    </style></head>
 <body>
     <!--[if lt IE 8]>
         <p class="browserhappy">
@@ -63,7 +75,7 @@
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="../" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/81339906_2518302605122404_1655358302290182144_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=dcio21svEBAAX9ooqR6&oh=9a8cc3d6c3b059a905130a69fb52ba92&oe=5E9E7DB6" alt="Мебель на заказ в Саранске"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/81339906_2518302605122404_1655358302290182144_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=61Q2tR3miuIAX86a8Fs&oh=85d40f9d5f18aef281c67d6e05bde514&oe=5E9E7DB6" alt="Мебель на заказ в Саранске"></div>
 							<div class="header__logo-txt">comodini_ru</div>
 						</a>
 						<div class="header__title">Мебель на заказ в Саранске</div>
@@ -198,6 +210,14 @@
 									</div>
 								</div>
 								<div class="swiper-slide">
+									<div class="stories__slide" title="диваны саранск">
+										<a href="../tags/./divany-saransk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/divany-saransk.png);"></div>
+											<div class="stories__slide-txt">диваны саранск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
 									<div class="stories__slide" title="скидки">
 										<a href="../tags/./skidki.html">
 											<div class="stories__slide-pic" style="background-image: url(../img/og/skidki.png);"></div>
@@ -210,14 +230,6 @@
 										<a href="../tags/./nizhniy-novgorod.html">
 											<div class="stories__slide-pic" style="background-image: url(../img/og/nizhniy-novgorod.png);"></div>
 											<div class="stories__slide-txt">нижний новгород</div>
-										</a>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="stories__slide" title="диваны саранск">
-										<a href="../tags/./divany-saransk.html">
-											<div class="stories__slide-pic" style="background-image: url(../img/og/divany-saransk.png);"></div>
-											<div class="stories__slide-txt">диваны саранск</div>
 										</a>
 									</div>
 								</div>
@@ -457,18 +469,9 @@
 										<div class="article-more__item-pic-blind">
 											<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>59</span>
 										</div>
-										<img class="js-now-lazy" src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/74647516_135090350798167_2888755899219581444_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=107&_nc_ohc=heEuHf2sxpkAX-p31vn&oh=faa95601d67620217b9288507131396c&oe=5EA6CFBC" alt="Новое поступление столовых">
+										<img class="js-now-lazy" src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/74647516_135090350798167_2888755899219581444_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=107&_nc_ohc=wRSLtbLhHiUAX-41Rr1&oh=d7e5940a59ca9e149946512c6962d2b9&oe=5EA6CFBC" alt="Новое поступление столовых">
 									</div>
 									<div class="article-more__item-name">Новое поступление столовых</div>
-								</a>
-								<a href="./privet-druz-ya-1.html" class="article-more__item">
-									<div class="article-more__item-pic">
-										<div class="article-more__item-pic-blind">
-											<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>51</span>
-										</div>
-										<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/75379766_3133801830179300_1375365337745734665_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108&_nc_ohc=HQrCU5PYmmcAX-F6nfc&oh=3eaa91af0fa955c70f92d75ca81c78f5&oe=5EAAFEEE" alt="Привет друзья!">
-									</div>
-									<div class="article-more__item-name">Привет друзья!</div>
 								</a>
 								<a href="./privet-druz-yaxxxxx.html" class="article-more__item">
 									<div class="article-more__item-pic">
@@ -491,11 +494,20 @@
 								<a href="./privet-druz-ya.html" class="article-more__item">
 									<div class="article-more__item-pic">
 										<div class="article-more__item-pic-blind">
-											<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>40</span>
+											<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>42</span>
 										</div>
-										<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/79804257_563312614397556_6562417291444184442_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100&_nc_ohc=nkwgxt6EUDIAX9Caxyw&oh=94895874e812ebfc56721db985bfef37&oe=5E907029" alt="Привет друзья!">
+										<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/79804257_563312614397556_6562417291444184442_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100&_nc_ohc=nkwgxt6EUDIAX9Caxyw&oh=27ab8413fa0789407feac3f3c2528ee7&oe=5EB7FD29" alt="Привет друзья!">
 									</div>
 									<div class="article-more__item-name">Привет друзья!</div>
+								</a>
+								<a href="./lineyka-modul-nykh-divanov.html" class="article-more__item">
+									<div class="article-more__item-pic">
+										<div class="article-more__item-pic-blind">
+											<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>38</span>
+										</div>
+										<img class="js-now-lazy" src="https://scontent-arn2-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/75580716_164414541506442_1694832105350277126_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_cat=106&_nc_ohc=-6W9kJjnyVkAX_s2uQT&oh=5009fa431102e8e273c5f6c861d84a77&oe=5EB732C1" alt="Линейка модульных диванов">
+									</div>
+									<div class="article-more__item-name">Линейка модульных диванов</div>
 								</a>
 							</div>
 						</div>
